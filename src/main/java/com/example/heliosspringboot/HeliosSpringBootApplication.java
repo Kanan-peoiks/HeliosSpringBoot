@@ -1,4 +1,4 @@
-package com.example.heliosspringboot.lesson24;
+package com.example.heliosspringboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
