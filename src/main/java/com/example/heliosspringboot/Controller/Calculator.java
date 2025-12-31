@@ -21,5 +21,20 @@ public class Calculator {
     return calculatorService.add(toplanan1,toplanan2);
     }
 
+    @GetMapping("subtract/{cixilan}/{cixan}")
+    public int subtract(@PathVariable int cixilan, @PathVariable int cixan){
+        return calculatorService.subtract(cixilan,cixan);
+    }
+
+    @GetMapping("Multiplication/{vurulan}/{vuran}")
+    public int multiplication(@PathVariable int vurulan, @PathVariable int vuran){
+        return calculatorService.multiply(vurulan,vuran);
+    }
+
+    @GetMapping("division/{bolunen}/{bolen}")
+    public int division(@PathVariable int bolunen, @PathVariable int bolen){
+        return calculatorService.divide(bolunen,bolen);
+    }
+
 
 }
