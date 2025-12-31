@@ -7,14 +7,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Hello {
 
-@GetMapping
+@GetMapping("giris")
+    public String welcome(){
+        return "Welcome to Spring Boot!";
+    }
+
+    @GetMapping("salamla")
     public String hello(){
         return "hello";
     }
 
-    @GetMapping("/sum")
-    public int sum(@RequestParam int a,
-                   @RequestParam int b) {
-        return a + b;
+
+    @GetMapping("cixis")
+    public String goodbye(){
+        return "GOODBYE";
     }
 }
